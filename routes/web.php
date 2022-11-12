@@ -19,6 +19,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::post('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
 
+
     Route::group(['middleware' => 'user'], function () {
 
 
